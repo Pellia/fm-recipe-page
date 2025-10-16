@@ -57,6 +57,7 @@ body {
   font: var(--text-preset-4);
   background-color: var(--color-stone-100);
   color: var(--color-stone-600);
+  letter-spacing: 0;
   height: 100vh;
   display: grid;
   grid-template-rows: 1fr 3vh;
@@ -86,9 +87,39 @@ body {
 /* Recipe Introduction */
 .recipe__introduction-header {
   font: var(--text-preset-1);
+  color: var(--color-stone-900);
   margin-bottom: var(--space-300);
 }
 
+.recipe__preparation {
+  background-color: var(--color-rose-50);
+  padding: var(--space-300);
+  border-radius: 12px;
+}
+
+.recipe__preparation-header {
+  font: var(--text-preset-3);
+  color: var(--color-rose-800);
+  margin-bottom: var(--space-200);
+}
+
+.recipe__preparation-list {
+  list-style-type: disc;
+  padding-left: var(--space-300);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-100);
+}
+
+.recipe__preparation-list-item {
+  padding-left: var(--space-200);
+}
+
+.recipe__preparation-list-item::marker {
+  color: var(--color-rose-800);
+}
+
+/* Recipe Divider */
 .recipe__divider {
   border: 1px solid var(--color-stone-150);
 }
