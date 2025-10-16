@@ -21,6 +21,20 @@
   /* Font */
   --font-young-serif: "Young Serif", sans-serif;
   --font-outfit: "Outfit", sans-serif;
+
+  /* Typography */
+  --line-height-1: 100%;
+  --line-height-2: 150%;
+  --text-preset-1: 400 40px / var(--line-height-1) var(--font-young-serif);
+  --text-preset-2: 400 28px / var(--line-height-1) var(--font-young-serif);
+  --text-preset-3: 600 20px / var(--line-height-1) var(--font-outfit);
+  --text-preset-4: 400 16px / var(--line-height-2) var(--font-outfit);
+  --text-preset-4-bold: 700 16px / var(--line-height-2) var(--font-outfit);
+}
+
+/* General */
+body {
+  font: var(--text-preset-4);
 }
 
 /* Footer Attribution */
