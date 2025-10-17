@@ -60,7 +60,7 @@ body {
   letter-spacing: 0;
   height: 100vh;
   display: grid;
-  grid-template-rows: 1fr 3vh;
+  grid-template-rows: 1fr 2vh;
   place-items: center;
 }
 
@@ -91,6 +91,7 @@ body {
   margin-bottom: var(--space-300);
 }
 
+/* Recipe Preparation */
 .recipe__preparation {
   background-color: var(--color-rose-50);
   padding: var(--space-300);
@@ -106,9 +107,6 @@ body {
 .recipe__preparation-list {
   list-style-type: disc;
   padding-left: var(--space-300);
-  display: flex;
-  flex-direction: column;
-  gap: var(--space-100);
 }
 
 .recipe__preparation-list-item {
@@ -116,6 +114,98 @@ body {
 }
 
 .recipe__preparation-list-item::marker {
+  color: var(--color-rose-800);
+}
+
+.recipe__preparation-list-item:not(:last-child) {
+  margin-bottom: var(--space-100);
+}
+
+/* Recipe Ingredients */
+.recipe__ingredients-header {
+  font: var(--text-preset-2);
+  color: var(--color-rose-800);
+  margin-bottom: var(--space-300);
+}
+
+.recipe__ingredients-list {
+  list-style-type: disc;
+  padding-left: var(--space-100);
+}
+
+.recipe__ingredients-list-item {
+  margin-left: var(--space-200);
+  padding-left: var(--space-300);
+}
+
+.recipe__ingredients-list-item::marker {
+  color: var(--color-rose-800);
+}
+
+.recipe__ingredients-list-item:not(:last-child) {
+  margin-bottom: var(--space-100);
+}
+
+/* Recipe Instructions */
+.recipe__instructions-header {
+  font: var(--text-preset-2);
+  color: var(--color-rose-800);
+  margin-bottom: var(--space-300);
+}
+
+.recipe__instructions-list {
+  list-style-type: decimal;
+  padding-left: var(--space-100);
+}
+
+.recipe__instructions-list-item {
+  margin-left: var(--space-200);
+  padding-left: var(--space-200);
+}
+
+.recipe__instructions-list-item strong {
+  font: var(--text-preset-4-bold);
+}
+
+.recipe__instructions-list-item::marker {
+  font: var(--text-preset-4-bold);
+  color: var(--color-rose-800);
+}
+
+.recipe__instructions-list-item:not(:last-child) {
+  margin-bottom: var(--space-100);
+}
+
+/* Recipe Nutrition */
+.recipe__nutrition-header {
+  font: var(--text-preset-2);
+  color: var(--color-rose-800);
+  margin-bottom: var(--space-300);
+}
+
+.recipe__nutrition-text {
+  margin-bottom: var(--space-300);
+}
+
+.recipe__nutrition-table {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-150);
+}
+
+.recipe__nutrition-data {
+  display: flex;
+  gap: var(--space-200);
+  padding-left: var(--space-400);
+  padding-right: var(--space-400);
+}
+
+.recipe__nutrition-data span {
+  width: 100%;
+}
+
+.recipe__nutrition-amount {
+  font: var(--text-preset-4-bold);
   color: var(--color-rose-800);
 }
 
